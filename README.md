@@ -109,7 +109,8 @@ o	The final model was serialized using the pickle module, making it ready for de
 
 
 
-Documentation Benefits to the Company
+**Documentation Benefits to the Company**
+
 The detailed documentation provided for the FindDefault project exemplifies a commitment to thoroughness and clarity, which directly benefits the company in several ways:
 1.	Improved Collaboration:
 o	Comprehensive documentation ensures that all team members, regardless of their role, have a clear understanding of the project’s objectives, methodologies, and outcomes. This facilitates better collaboration and more efficient problem-solving.
