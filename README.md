@@ -6,6 +6,11 @@ Credit cards are widely used for online purchases and payments, making them a co
 ## Dataset Description
 The dataset used in this project contains credit card transactions made by European cardholders in September 2013. The dataset includes transactions from a two-day period, totaling 284,807 transactions, of which 492 are fraudulent. This results in a highly imbalanced dataset, with fraudulent transactions making up only 0.172% of all transactions.
 
+Data:
+The dataset for this project can be accessed by clicking the link provided below.
+creditcard.csv
+
+
 **Key Dataset Characteristics:**
 - **Total Transactions:** 284,807
 - **Fraudulent Transactions:** 492
