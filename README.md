@@ -64,6 +64,20 @@ The project is structured into the following key phases:
      - Train the models using the training set and perform cross-validation to assess the robustness of the model.
      - Tune hyperparameters using techniques like GridSearchCV to find the optimal model parameters.
 
+Hyperparameter Tuning
+To enhance model performance, hyperparameters were meticulously tuned using GridSearchCV. This technique involves systematically exploring a specified range of hyperparameters for each model to identify the optimal combination that maximizes performance metrics. GridSearchCV evaluates multiple parameter configurations by performing cross-validation, ensuring the selected hyperparameters provide the best trade-off between model accuracy and generalization.
+
+Choosing the Best Model
+After tuning hyperparameters, the performance of various models was assessed, and the Logistic Regression model emerged as the top performer. This model, trained on a dataset balanced using SMOTE, demonstrated outstanding performance with an ROC-AUC score of 0.99 on the training set and 0.97 on the test set. These high scores indicate the model’s excellent ability to differentiate between fraudulent and legitimate transactions.
+
+The decision to select Logistic Regression was based on several factors:
+
+Simplicity: The model’s straightforward nature makes it easy to interpret and understand.
+Ease of Interpretation: Logistic Regression provides clear insights into the influence of each feature on the prediction, aiding in interpretability.
+Lower Computational Resource Requirements: Compared to more complex models like XGBoost, Logistic Regression is computationally efficient, making it suitable for deployment in real-time systems.
+By combining hyperparameter tuning with the selected optimal model, the project ensures that the final Logistic Regression model is both highly accurate and practical for real-world application.
+
+
 ### 7. Model Evaluation
    - **Objective:** Evaluate the model's performance using various metrics and choose the best-performing model.
    - **Performance Metrics:**
@@ -142,8 +156,6 @@ pip install streamlit
 **Run the Streamlit app:**
 
 streamlit run streamlit(credit_card)(1)(1).py
-
-
 
 
 
