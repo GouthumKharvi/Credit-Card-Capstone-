@@ -149,7 +149,8 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler, PowerTransformer
 
-# Function to load the model from a specified file path
+**Function to load the model from a specified file path**
+
 def load_model(file_path):
     with open(file_path, 'rb') as file:
         model = pickle.load(file)
