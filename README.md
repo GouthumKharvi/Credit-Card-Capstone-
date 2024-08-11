@@ -91,6 +91,58 @@ The project is structured into the following key phases:
    - **Model Performance:** Report the final model’s performance on the test set, including comparisons with baseline models. Highlight the model’s strengths and any potential limitations.
    - **Final Model:** The Logistic Regression model with SMOTE balancing was selected for its excellent performance, achieving an ROC-AUC score of 0.99 on the train set and 0.97 on the test set.
 
+
+**Streamlit Integration**
+Streamlit is used to create an interactive web application for real-time fraud detection. The Streamlit app provides a user-friendly interface to input transaction data and receive predictions.
+
+**Usage of Streamlit**
+**Setup Streamlit App**
+
+Create a **streamlit_app.py** file for the application interface.
+Implement functionality to input transaction data and display predictions.
+
+**Streamlit Application Code**
+import streamlit as st
+import pickle
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+# Load pre-trained model
+with open('load_best_model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+# Set up the Streamlit interface
+st.title('Credit Card Fraud Detection')
+st.write('Enter the transaction details below:')
+
+# Input fields for transaction data
+transaction_amount = st.number_input('Transaction Amount', min_value=0.0, step=0.01)
+# Add additional input fields for other features as needed
+
+# Process input data
+data = {
+    'amount': transaction_amount,
+    # Add other features
+}
+input_df = pd.DataFrame([data])
+
+# Predict
+if st.button('Predict'):
+    # Standardize or preprocess the input data if needed
+    prediction = model.predict(input_df)
+    st.write('Prediction:', 'Fraudulent' if prediction[0] == 1 else 'Legitimate')
+    
+**Running the Streamlit App**
+
+Install Streamlit if not already installed:
+
+
+pip install streamlit
+
+**Run the Streamlit app:**
+
+streamlit run streamlit(credit_card)(1)(1).py
+
 ## Conclusion
 Project Summary:
 The FindDefault project aimed to develop a reliable credit card fraud detection model, addressing the critical challenge of identifying fraudulent transactions among a vast number of legitimate ones. The project followed a systematic approach, ensuring that each phase contributed to building a robust and accurate predictive model.
