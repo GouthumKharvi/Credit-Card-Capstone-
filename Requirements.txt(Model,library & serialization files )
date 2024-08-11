@@ -1,0 +1,43 @@
+**Python Libraries:**
+pandas: For data manipulation and analysis.
+
+import pandas as pd
+numpy: For numerical operations and array handling.
+
+import numpy as np
+matplotlib: For data visualization.
+
+import matplotlib.pyplot as plt
+seaborn: For statistical data visualization.
+
+import seaborn as sns
+scikit-learn (sklearn): For machine learning tasks.
+
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
+from sklearn.decomposition import PCA
+imbalanced-learn (imblearn): For handling imbalanced datasets.
+
+from imblearn.over_sampling import SMOTE, ADASYN
+from imblearn.under_sampling import RandomUnderSampler
+xgboost: For using the XGBoost model.
+
+import xgboost as xgb
+pickle: For saving and loading the trained model.
+
+import pickle
+streamlit: For deploying the model as an interactive web application.
+
+import streamlit as st
+Additional Libraries (If Applicable):
+warnings: For controlling the warning messages during execution.
+
+import warnings
+warnings.filterwarnings('ignore')
+time: For tracking time, if you measured model training time.
+
+import time
