@@ -16,7 +16,7 @@ The dataset used in this project contains credit card transactions made by Europ
 
 The dataset contains various features, such as transaction amount, timestamp, and anonymized numerical features, which are derived from the original data to protect sensitive information.
 
-## Project Workflow
+## Project Pipeline
 The project is structured into the following key phases:
 
 ### 1. Exploratory Data Analysis (EDA)
