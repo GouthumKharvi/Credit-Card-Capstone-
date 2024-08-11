@@ -4,7 +4,7 @@
 Credit cards are widely used for online purchases and payments, making them a convenient tool for managing personal finances. However, this convenience comes with a risk: credit card fraud. Fraudulent activities can cause significant financial loss to both customers and financial institutions. This project, titled **FindDefault**, focuses on predicting fraudulent credit card transactions. The primary goal is to build a robust classification model that accurately distinguishes between legitimate and fraudulent transactions, thus helping credit card companies minimize losses and protect their customers.
 
 ## Dataset Description
-The dataset used in this project contains credit card transactions made by European cardholders in September 2013. The dataset includes transactions from a two-day period, totaling 284,807 transactions, of which 492 are fraudulent. This results in a highly imbalanced dataset, with fraudulent transactions making up only 0.172% of all transactions.
+The dataset used in this project contains credit card transactions made by European cardholders in September 2013. The dataset includes transactions from a two-day period, totaling 284,807 transactions, of which 492 are fraudulent. This results in a highly imbalanced dataset, with fraudulent transactions making up only 0.172% of all transactions. 
 
 
 
