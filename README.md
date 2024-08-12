@@ -158,7 +158,35 @@ pip install streamlit
 streamlit run streamlit(credit_card)(1)(1).py
 
 
+**Evaluating and Selecting the Best Model for Balanced Data**
 
+We balanced the data using various techniques, including Undersampling, Oversampling, SMOTE, and ADASYN, and built several models such as Logistic Regression, XGBoost, Decision Tree, and Random Forest.
+
+All models showed good performance to varying extents. However, since Undersampling resulted in some loss of information, it is preferable to exclude these models from consideration.
+
+The models trained with SMOTE and ADASYN performed well, but among them, the Logistic Regression model stood out. It achieved an impressive ROC score of 0.99 on the training set and 0.97 on the test set. This high ROC score indicates that Logistic Regression, enhanced with SMOTE, effectively distinguishes between classes.
+
+Given its simplicity, ease of interpretation, and lower resource requirements compared to more complex models like Random Forest and XGBoost, the Logistic Regression model with SMOTE is deemed the best choice. Its efficiency and performance make it suitable for practical applications where both accuracy and resource constraints are critical.
+
+
+**Comprehensive Cost-Benefit Analysis**
+
+While most models performed well in terms of ROC score, Precision, and Recall, selecting the best model requires careful consideration of several factors, including infrastructure, resources, and computational power. Complex models like Random Forest, SVM, and XGBoost demand significant computational resources, leading to increased deployment costs. These models also come with disadvantages such as difficulty in interpretation and tuning, which adds to the complexity of model management and maintenance.
+
+In contrast, simpler models like Logistic Regression are more cost-effective to build and deploy due to their lower computational requirements. Logistic Regression offers easier interpretation and implementation, which is crucial for understanding model decisions and ensuring regulatory compliance.
+
+When evaluating the trade-offs between model complexity and performance, the financial implications of minor changes in the ROC score must be considered. If the monetary impact of a slight improvement in the ROC score is substantial, investing in a complex model might be justified despite higher costs. However, if the gains are marginal, a simpler, more cost-effective model like Logistic Regression is preferable due to its lower resource requirements and ease of use.
+
+**Business Summary**
+For banks with smaller average transaction values, high precision is essential because we want to label only relevant transactions as fraudulent. Each flagged transaction can be verified by calling the customer, adding a human element to the verification process. However, when precision is low, this task becomes burdensome due to the increased need for human intervention.
+
+Conversely, for banks handling larger transaction values, low recall is a significant concern as it means the model fails to detect some fraudulent transactions. Missing high-value fraudulent transactions can lead to substantial financial losses.
+
+To safeguard against high-value fraudulent transactions, focusing on high recall is crucial for detecting actual fraudulent activities.
+
+After evaluating several models, we observed that with a balanced dataset using the SMOTE technique, the Logistic Regression model performed exceptionally well, achieving a good ROC score and high recall. This model is not only effective but also easy to interpret and explain to business stakeholders.
+
+Therefore, we recommend the Logistic Regression model with SMOTE for its excellent balance of performance and simplicity, ensuring accurate detection of high-value fraudulent transactions while keeping operational costs low.
 
 
 ## Conclusion
