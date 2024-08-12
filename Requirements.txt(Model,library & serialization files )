@@ -42,6 +42,11 @@ time: For tracking time, if you measured model training time.
 
 import time
 
+Model used in this proeject.
+**Logistic Regression**
+**XGB model**
+**Decision Tree Classifier**
+
 
 pandas==1.5.3
 numpy==1.23.5
