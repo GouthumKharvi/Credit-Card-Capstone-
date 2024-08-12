@@ -193,7 +193,7 @@ streamlit run streamlit(credit_card)(1)(1).py
 
 **Evaluating and Selecting the Best Model for Balanced Data**
 
-We balanced the data using various techniques, including Undersampling, Oversampling, SMOTE, and ADASYN, and built several models such as Logistic Regression, XGBoost, Decision Tree, and Random Forest.
+We balanced the data using various techniques, including Undersampling, Oversampling, SMOTE, and ADASYN, and built several models such as Logistic Regression, XGBoost, Decision Tree.
 
 All models showed good performance to varying extents. However, since Undersampling resulted in some loss of information, it is preferable to exclude these models from consideration.
 
