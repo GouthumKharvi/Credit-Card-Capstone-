@@ -53,9 +53,42 @@ The project is structured into the following key phases:
 ### 5. Model Selection
    - **Objective:** Select appropriate machine learning algorithms for the classification task.
    - **Considered Models:**
-     - **Logistic Regression:** A simple yet effective model for binary classification tasks.
-     - **Decision Trees:** A model that can capture complex relationships between features.
-     - **XGBoost:** A powerful ensemble method that combines multiple weak learners to form a strong predictive model.
+     
+**- 1. Logistic Regression**
+**Explanation:** Logistic Regression is a statistical model used for binary classification tasks. It predicts the probability that a given input belongs to a specific class (fraudulent or legitimate) by applying a logistic function to a linear combination of input features. The output is a probability score between 0 and 1, which is then thresholded to make a binary decision.
+
+**Usage:** In FindDefault project, Logistic Regression was selected due to its simplicity and interpretability. It provided clear insights into how features influence the prediction of fraudulent transactions. The model was trained using SMOTE to handle class imbalance, resulting in high performance with an ROC-AUC score of 0.99 on the training set and 0.97 on the test set. Its lower computational requirements made it suitable for real-time deployment.
+
+**Benefits:**
+Interpretability: The model is highly interpretable, providing insights into the impact of each feature on the likelihood of fraud.
+Efficiency: Logistic Regression is computationally efficient and works well with large datasets, making it a good starting point for baseline comparisons.
+
+**Probability Estimates:** It outputs probabilities, enabling threshold adjustments for different risk levels.
+
+
+**2. XGBoost**
+**Explanation:** XGBoost (Extreme Gradient Boosting) is an ensemble learning method that builds multiple decision trees sequentially. Each tree tries to correct the errors of the previous ones, resulting in a strong predictive model. XGBoost is known for its speed, accuracy, and ability to handle large datasets and high-dimensional data.
+
+**Usage:** XGBoost was considered in the FindDefault project as one of the potential models due to its ability to capture complex relationships in the data. It performed well during evaluation but was not chosen as the final model due to higher computational costs and the added complexity in interpretation and deployment. However, it remains a powerful option for scenarios where slight improvements in prediction accuracy are crucial, and resources are available to support its deployment.
+
+**Benefits:**
+**Intuitive Visualization:** The tree structure is easy to visualize and explain to non-technical stakeholders.
+**Feature Importance:** It provides a clear ranking of feature importance, helping in feature selection and understanding which factors contribute most to fraud detection.
+**Flexibility:** The model can handle both numerical and categorical data, making it versatile.
+
+
+
+
+**3. Decision Tree**
+**Explanation:** A Decision Tree is a non-parametric model that splits the dataset into subsets based on feature values, forming a tree-like structure. Each node represents a feature, and each branch represents a decision rule, ultimately leading to a classification at the leaf nodes. Decision Trees are easy to understand and interpret but may suffer from overfitting if not properly pruned.
+
+**Usage:** In the FindDefault project, Decision Trees were evaluated as a model choice due to their ability to model complex patterns in the data. They provided valuable insights during the exploratory phase but were ultimately not selected as the final model. While Decision Trees offer interpretability, they can be prone to overfitting, especially in high-dimensional datasets. Nevertheless, they served as a useful comparison against more complex models like XGBoost and simpler ones like Logistic Regression.
+	
+**Benefits:**
+•	Performance: XGBoost is known for its high predictive performance and is often the top choice in machine learning competitions.
+•	Handling Missing Data: It automatically handles missing values, simplifying the preprocessing stage.
+•	Customizability: The model provides extensive hyperparameter tuning options, allowing fine-grained control over its behavior.
+
 
 ### 6. Model Training and Validation
    - **Objective:** Train the model on the training dataset and validate its performance on the validation set.
