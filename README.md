@@ -249,7 +249,7 @@ The detailed documentation provided for the FindDefault project exemplifies a co
 1.	Improved Collaboration:
 o	Comprehensive documentation ensures that all team members, regardless of their role, have a clear understanding of the project’s objectives, methodologies, and outcomes. This facilitates better collaboration and more efficient problem-solving.
 2.	Streamlined Onboarding:
-o	New team members can quickly get up to speed by reviewing the documentation, reducing the time needed for onboarding and allowing them to contribute effectively from the outset.
+	New team members can quickly get up to speed by reviewing the documentation, reducing the time needed for onboarding and allowing them to contribute effectively from the outset.
 3.	Enhanced Decision-Making:
 o	Clear documentation of model selection, evaluation criteria, and results allows stakeholders to make informed decisions based on the project’s findings. This transparency is crucial for building trust in the model's predictions and the overall project outcomes.
 4.	Regulatory Compliance:
