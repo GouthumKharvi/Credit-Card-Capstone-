@@ -247,15 +247,15 @@ o	The final model was serialized using the pickle module, making it ready for de
 
 The detailed documentation provided for the FindDefault project exemplifies a commitment to thoroughness and clarity, which directly benefits the company in several ways:
 1.	Improved Collaboration:
-o	Comprehensive documentation ensures that all team members, regardless of their role, have a clear understanding of the project’s objectives, methodologies, and outcomes. This facilitates better collaboration and more efficient problem-solving.
+	Comprehensive documentation ensures that all team members, regardless of their role, have a clear understanding of the project’s objectives, methodologies, and outcomes. This facilitates better collaboration and more efficient problem-solving.
 2.	Streamlined Onboarding:
 	New team members can quickly get up to speed by reviewing the documentation, reducing the time needed for onboarding and allowing them to contribute effectively from the outset.
 3.	Enhanced Decision-Making:
-o	Clear documentation of model selection, evaluation criteria, and results allows stakeholders to make informed decisions based on the project’s findings. This transparency is crucial for building trust in the model's predictions and the overall project outcomes.
+	Clear documentation of model selection, evaluation criteria, and results allows stakeholders to make informed decisions based on the project’s findings. This transparency is crucial for building trust in the model's predictions and the overall project outcomes.
 4.	Regulatory Compliance:
-o	In highly regulated industries like finance, having detailed documentation is essential for demonstrating compliance with industry standards and regulations. It provides a record of the methodologies used and the reasoning behind key decisions.
+	In highly regulated industries like finance, having detailed documentation is essential for demonstrating compliance with industry standards and regulations. It provides a record of the methodologies used and the reasoning behind key decisions.
 5.	Future-Proofing:
-o	Detailed documentation lays the foundation for future work, making it easier to revisit the project, iterate on the existing model, or integrate new technologies as they become available. This ensures that the project remains relevant and continues to provide value over time.
+	Detailed documentation lays the foundation for future work, making it easier to revisit the project, iterate on the existing model, or integrate new technologies as they become available. This ensures that the project remains relevant and continues to provide value over time.
 
 
 **Future Work**
